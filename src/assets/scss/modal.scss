@@ -1,0 +1,25 @@
+/* === Backdrop Fade === */
+.backdrop-enter-active,
+.backdrop-leave-active {
+  transition: opacity 0.3s ease;
+}
+.backdrop-enter-from,
+.backdrop-leave-to {
+  opacity: 0;
+}
+
+/* === Modal Scale + Fade === */
+.modal-scale-enter-active,
+.modal-scale-leave-active {
+  transition: all 0.3s ease;
+}
+.modal-scale-enter-from,
+.modal-scale-leave-to {
+  opacity: 0;
+  transform: scale(0.96);
+}
+.modal-scale-enter-to,
+.modal-scale-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}

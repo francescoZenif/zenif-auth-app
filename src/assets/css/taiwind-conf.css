@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-blue-brand: #00B5D6;
+  --color-green-brand: #bbff00;
+ 
+
+  --breakpoint-3xl: 120rem;
+ 
+}
+
+ 
+ 
+@layer utilities {
+  .prose p {
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose ul {
+    margin-top: 0rem;
+    margin-bottom: 0.7rem;
+  }
+  .prose li {
+    margin: 0rem;
+  }
+  .prose h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pros-auth {
+    color: #fff;
+  }
+}  

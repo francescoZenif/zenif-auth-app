@@ -44,16 +44,7 @@ export default defineConfig(({mode}) => {
       }),
     ],
     server: {
-    host: true, // or true for all
-      port: 5174,
-      https: {
-        key: fs.readFileSync("./certs/localhost+2-key.pem"),
-        cert: fs.readFileSync("./certs/localhost+2.pem"),
-      },
-      headers: {
-        "Service-Worker-Allowed": "/",
-        "Service-Worker": "script",
-      },
+      host: true, // or true for all
     },
     resolve: {
       alias: {

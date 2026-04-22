@@ -1,0 +1,101 @@
+@use "./variables.scss" as *;
+@use "./fonts.scss" as *;
+@use "./form-auth.scss" as *;
+@use "./auth-animation.scss" as *;
+@use "./inputs.scss" as *;
+@use "./buttons.scss" as *;
+@use "./multiselect.scss" as *;
+@use "./date-input.scss" as *;
+@use "./popover.scss" as *;
+@use "./select.scss" as *;
+@use "./vs_dropdown.scss" as *;
+@use "./full-calendar.scss" as *;
+@use "./side-data.scss" as *;
+@use "./table.scss" as *;
+@use "./richtext.scss" as *;
+@use "./modal.scss" as *;
+ 
+
+
+.bg-blur {
+  &:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+  > * {
+    z-index: 2;
+  }
+}
+
+.unselect-element {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* Prevent right-click */
+  pointer-events: none;
+
+  /* Make text difficult to select */
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Additional protection */
+.unselect-element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* Firefox */
+.auth-scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: #BDF902 #f0f1f3;
+}
+
+/* Chrome, Edge, and Safari */
+.auth-scrollbar::-webkit-scrollbar {
+  width: 16px;
+}
+
+.auth-scrollbar::-webkit-scrollbar-track {
+  background: #f0f1f3;
+  border-radius: 10px;
+}
+
+.auth-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #BDF902;
+  border-radius: 10px;
+  border: 3px solid #f0f1f3;
+}
+
+.auth-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #BDF902;
+}
+
+ 
+.auth-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-shadow {
+box-shadow: 0px 0px 46px #4870840F;
+}
+
+
+.custom-shadow-2 {
+box-shadow: 0px 0px 46px #48708417;
+}

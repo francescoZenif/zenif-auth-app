@@ -1,0 +1,33 @@
+.sd-row-4 > * {
+  flex: 1 1 calc(25% - 1rem);
+}
+
+.sd-row-3 > * {
+  flex: 1 1 calc(33% - 1rem);
+}
+
+.sd-row-2 > * {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.sd-row-1 > * {
+  flex: 1 1 calc(100% - 1rem);
+}
+
+.sd-row > * {
+  box-sizing: border-box;
+
+  @media (max-width: 1280px) {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  @media (max-width: 768px) {
+    flex: 1 1 calc(100% - 1rem);
+  }
+}
+
+.sd-row > button {
+  flex: none !important;
+}
+
+@media (max-width: 1024px) {
+}

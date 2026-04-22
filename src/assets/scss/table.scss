@@ -1,0 +1,27 @@
+.table-head svg {
+  margin: 0 auto;
+}
+
+#t-top-pages-report tr td:has(.up) {
+    background-color: #EAFEE3;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+#t-top-pages-report tr td:has(.down) {
+    background-color: #FDEBEB;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+#t-top-pages-report tr td:has(.cell) {
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+}
+ 
+#t-top-pages-report tbody * {
+    color: #424242 !important;
+}
+
+.input-date-transparent .dp__disabled{
+    background-color: transparent !important;
+}

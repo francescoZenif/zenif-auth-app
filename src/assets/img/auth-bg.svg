@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_246" data-name="Rectangle 246" width="1920" height="1080" transform="translate(0 -1)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bf0"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bf0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0 1)" clip-path="url(#clip-path)">
+    <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="470" cy="865" rx="470" ry="865" transform="matrix(0.985, 0.174, -0.174, 0.985, -549.654, -826.473)" opacity="0.701" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_47" data-name="Ellipse 47" cx="470" cy="865" rx="470" ry="865" transform="translate(1696 123)" opacity="0.72" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_53" data-name="Ellipse 53" cx="470" cy="865" rx="470" ry="865" transform="translate(1002.639 67.482) rotate(31)" opacity="0.224" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_54" data-name="Ellipse 54" cx="776" cy="1429" rx="776" ry="1429" transform="translate(-827.617 -803.874) rotate(-40)" opacity="0.224" fill="url(#radial-gradient-4)"/>
+  </g>
+</svg>

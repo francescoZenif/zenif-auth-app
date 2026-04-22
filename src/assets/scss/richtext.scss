@@ -1,0 +1,108 @@
+.ck-focused {
+  border: 1px solid #000 !important;
+  box-shadow: none !important;
+}
+.ck-editor__editable_inline {
+  min-height: 200px;
+}
+
+.ck.ck-powered-by {
+  display: none !important;
+}
+
+.ck .mention {
+  color: #00B5D6;
+  background: rgb(73 155 216 / 16%);
+  padding: 0px 6px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.ck.ck-list__item > .ck-button.ck-on:not(.ck-list-item-button):hover:not(.ck-disabled),
+.ck.ck-list__item > .ck-button.ck-on:not(.ck-list-item-button) {
+  background: #00B5D6;
+}
+.ck.ck-editor {
+  width: 100%;
+}
+.ck-content {
+  -webkit-border-bottom-right-radius: 0.75rem !important;
+  -webkit-border-bottom-left-radius: 0.75rem !important;
+  -moz-border-radius-bottomright: 0.75rem !important;
+  -moz-border-radius-bottomleft: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
+  border-bottom-left-radius: 0.75rem !important;
+}
+
+.ck-sticky-panel__content {
+  -webkit-border-top-right-radius: 0.75rem !important;
+  -webkit-border-top-left-radius: 0.75rem !important;
+  -moz-border-radius-topright: 0.75rem !important;
+  -moz-border-radius-topleft: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+  border-top-left-radius: 0.75rem !important;
+  /* overflow: hidden; */
+}
+
+.no-tool-bar .ck-sticky-panel__content {
+  border: 0px !important;
+}
+
+.no-tool-bar .ck.ck-editor__main > .ck-editor__editable {
+  border-radius: 0.75rem !important;
+}
+.ck-widget.html-object-embed::before {
+  display: none;
+}
+span.ck-widget.html-object-embed {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.text-area-view {
+  border: 1px solid;
+  border-color: #ebe6e7;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.text-area-view img {
+  border: 4px solid #eff5f9;
+  max-width: 400px !important;
+  width: 100% !important;
+}
+
+.text-area-view .attachment,
+.ck-content .attachment {
+  display: inline-block;
+  background: #eff5f9;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #7d8e9a;
+  margin-top: 0.5rem;
+
+  position: relative;
+}
+.text-area-view .attachment:before,
+.ck-content .attachment:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f15b";
+  margin-right: 8px;
+  color: #00B5D6;
+}
+.text-area-view .attachment:hover,
+.ck-content .attachment:hover {
+  opacity: 0.7;
+}
+.ck-editor__top {
+  border-top: 1px solid #ccced1 !important;
+  border-right: 1px solid #ccced1 !important;
+  border-bottom: 0px solid #ccced1 !important;
+  border-left: 1px solid #ccced1 !important;
+  outline: none;
+}
+ 
+.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content{
+    border: 0px!important
+}
