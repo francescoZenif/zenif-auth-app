@@ -150,5 +150,9 @@ const emptyError = () => {
         <router-link to="/terms-and-conditions" class="hover:underline">See our T&Cs</router-link>
       </div>
     </AuthForm>
+    <router-link to="/" class="flex justify-center items-center hover:underline gap-2">
+      <font-awesome-icon icon="fa-regular fa-arrow-left-long" />
+      Back
+    </router-link>
   </AuthWrapForm>
 </template>
