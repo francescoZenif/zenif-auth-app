@@ -23,7 +23,7 @@ const goToLogin = () => {
             <h2 class="text-white !text-3xl">Terms & Conditions</h2>
             <p class="text-[#A0A2A8] text-sm mt-2">Last updated 23rd April 2026</p>
           </div>
-          <div class="h-[500px] !overflow-y-scroll text-left px-7 my-9 auth-scrollbar prose pros-auth">
+          <div class="h-[500px] !overflow-y-scroll text-left px-4 md:px-7 my-9 auth-scrollbar prose pros-auth">
             <body>
               <h1>Terms of Service &amp; Platform Use Agreement</h1>
 

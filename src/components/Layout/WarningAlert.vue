@@ -4,8 +4,6 @@ import layoutState from "@/store/layoutState";
 function closeModal() {
   layoutState.modalWarning = 0;
 }
-
- 
 </script>
 <template>
   <!-- Backdrop -->
@@ -13,7 +11,7 @@ function closeModal() {
     <div v-if="layoutState.modalWarning" class="fixed inset-0 z-50 grid place-content-center bg-black/50 p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle" @click.self="closeModal">
       <!-- Modal Content -->
       <transition name="modal-scale">
-        <div v-if="layoutState.modalWarning" class="w-full max-w-md min-w-md rounded-lg bg-white p-6 shadow-lg">
+        <div v-if="layoutState.modalWarning" class="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
           <div class="flex items-start justify-between">
             <div class="flex gap-2 items-center">
               <svg class="size-6 text-[#F9B33B]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -43,5 +41,3 @@ function closeModal() {
     </div>
   </transition>
 </template>
-
- 
