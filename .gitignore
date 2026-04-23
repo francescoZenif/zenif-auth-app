@@ -4,4 +4,3 @@ node_modules
 .env.staging
 .vscode
 certs
-dist
