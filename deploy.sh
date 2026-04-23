@@ -24,3 +24,5 @@ cat > dist/.htaccess << 'EOF'
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
+
+cp -r ./temp-assets ./dist/temp-assets
