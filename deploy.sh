@@ -1,5 +1,6 @@
 yarn
-yarn staging -- --sourcemap
+yarn staging -- --sourcemap 
+cp -r ./temp-assets ./dist/temp-assets
 cat > dist/.htaccess << 'EOF'
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -25,4 +26,3 @@ cat > dist/.htaccess << 'EOF'
   ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
 
-cp -r ./temp-assets ./dist/temp-assets
