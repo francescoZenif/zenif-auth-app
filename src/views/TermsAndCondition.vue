@@ -11,7 +11,7 @@ const goToLogin = () => {
   <div class="bg-black text-white flex items-center justify-center min-h-screen">
     <div class="w-full m-5 gradient-content">
       <AuthLogo />
-      <h1 class="text-center !text-3xl mb-4">Privacy Policy</h1>
+      <h1 class="text-center !text-3xl mb-4">Privacy Policy.</h1>
       <div>
         <p class="text-center">By continuing you agree to the <b class="text-green-brand">Terms & Conditions</b> stated below.</p>
         <span class="h-[1px] w-[50px] bg-green-brand mx-auto mt-8 mb-8 block"></span>
@@ -658,7 +658,7 @@ const goToLogin = () => {
         </div>
         <router-link to="/login" class="flex justify-center items-center hover:underline gap-2">
           <font-awesome-icon icon="fa-regular fa-arrow-left-long" />
-          Go To <b class="text-green-brand"> Log In</b>
+          <span>Go To <b class="text-green-brand">Log In</b></span>
         </router-link>
       </div>
     </div>

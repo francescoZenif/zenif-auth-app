@@ -50,9 +50,9 @@ const emptyError = () => {
   <AuthWrapForm>
     <div class="p-0 flex flex-col gap-5 m-5">
       <AuthLogo />
-      <h1 class="text-center !text-3xl">Reset Password</h1>
+      <h1 class="text-center !text-3xl">Reset <span class="text-green-brand">Password</span>.</h1>
       <span>
-        <p class="text-center">Enter your email address below to reset password</p>
+        <p class="text-center">Enter your email address below to reset password.</p>
         <span class="h-[1px] w-[50px] bg-green-brand mx-auto mt-8 mb-4 block"></span>
       </span>
 
@@ -69,7 +69,7 @@ const emptyError = () => {
       <div class="text-center">
         <router-link to="/login" class="flex justify-center items-center hover:underline gap-2">
           <font-awesome-icon icon="fa-regular fa-arrow-left-long" />
-          Back To <b class="text-green-brand"> Log In</b>
+          <span>Back To <b class="text-green-brand">Log In</b></span>
         </router-link>
       </div>
     </div>

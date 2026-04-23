@@ -124,7 +124,7 @@ const emptyError = () => {
       <div class="flex justify-between">
         <button class="flex justify-center items-center gap-2 hover:underline" @click="step = 1">
           <font-awesome-icon icon="fa-regular fa-arrow-left-long" />
-          Back To <b class="text-green-brand">Email</b>
+          <span>Back To <b class="text-green-brand">Email</b></span>
         </button>
         <RouterLink class="text-sm hover:underline" to="/forgot-password">Forgot Password?</RouterLink>
       </div>
@@ -133,14 +133,12 @@ const emptyError = () => {
         <span v-if="loading"> Loading... </span>
         <span v-else> Login </span>
       </AuthBtn>
-      <div class="text-center">
-        <router-link to="/terms-and-conditions" class="hover:underline">See our T&Cs</router-link>
-      </div>
     </div>
 
     <AuthForm @submit="submitCode" v-if="step == 3">
+      <AuthLogo />
       <h3 class="font-bold text-center">TWO-STEP VERIFICATION</h3>
-      <p class="text-center !text-white">Enter the code we send to your email address</p>
+      <p class="text-center !text-white">Enter the code we send to your email address.</p>
       <AuthVerificationCodeInput ref="childRef" />
       <AuthBtn type="submit" version="fill" :disabled="loading">
         <span v-if="loading"> Loading... </span>

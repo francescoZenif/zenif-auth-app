@@ -53,10 +53,10 @@ function onPasswordValid(valid) {
       </AuthBtn>
     </AuthForm>
     <div v-else>
-      <h2 class="text-red text-center mb-4">Token Not Valid</h2>
+      <h2 class="text-red text-center mb-4">Token Not Valid.</h2>
       <router-link to="/login" class="flex justify-center items-center hover:underline gap-2">
         <font-awesome-icon icon="fa-regular fa-arrow-left-long" />
-        Back To <b class="text-green-brand"> Log In</b>
+        <span>Back To <b class="text-green-brand">Log In</b></span>
       </router-link>
     </div>
   </AuthWrapForm>
