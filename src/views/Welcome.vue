@@ -12,7 +12,10 @@ function goToLogin() {
     <AuthForm>
       <AuthLogo />
       <h1 class="text-center !text-3xl">Welcome to Zenif</h1>
-      <p class="text-center">Your business partner. Please click log in below to enter.</p>
+      <p class="text-center">
+        Your business partner.<br />
+        Please click log in below to enter.
+      </p>
       <AuthBtn type="button" version="fill" @click="goToLogin()"> Log In </AuthBtn>
       <div class="text-center">
         <router-link to="/terms-and-conditions" class="hover:underline"> See our T&Cs </router-link>
