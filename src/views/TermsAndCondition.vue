@@ -9,7 +9,7 @@ const goToLogin = () => {
 
 <template>
   <div class="bg-black text-white flex items-center justify-center min-h-screen">
-    <div class="w-full m-5 gradient-content">
+    <div class="w-full m-5 gradient-content py-6 md:py-0">
       <AuthLogo />
       <h1 class="text-center !text-3xl mb-4">Privacy Policy.</h1>
       <div>
@@ -20,7 +20,7 @@ const goToLogin = () => {
       <div class="flex flex-col gap-5 justify-center text-center">
         <div class="max-w-[700px] mx-auto w-full p-3 rounded-3xl border-[0.5px] border-[#DEE4CD] white-06">
           <div class="w-full p-4 rounded-2xl white-06">
-            <h2 class="text-white !text-3xl">Terms & Conditions</h2>
+            <h2 class="text-white !text-[1.3rem]">Terms & Conditions</h2>
             <p class="text-[#A0A2A8] text-sm mt-2">Last updated 23rd April 2026</p>
           </div>
           <div class="h-[500px] !overflow-y-scroll text-left px-4 md:px-7 my-9 auth-scrollbar prose pros-auth">

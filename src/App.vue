@@ -1,12 +1,17 @@
 <script setup>
 import {RouterView} from "vue-router";
-import {isLoggedIn} from "@/services/auth.js";
+import {onMounted} from "vue";
 
-localStorage.clear();
+onMounted(() => {
+  localStorage.removeItem("zenif_auth_token");
+  if (localStorage.getItem("zenif_auth_redirect")) {
+    window.location.href = localStorage.getItem("zenif_auth_redirect");
+  }
+});
 </script>
 
 <template>
-  <main v-if="!isLoggedIn()">
+  <main>
     <router-view></router-view>
   </main>
   <ErrorAlert />

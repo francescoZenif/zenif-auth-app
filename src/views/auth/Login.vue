@@ -49,12 +49,11 @@ const submitCode = async () => {
   code = code.join("");
   try {
     const res = await axios.post("/api/v1/sub/login/verify-code", {user: user.value, code: code});
-    console.log(res);
 
-    // if (res.data.token) {
-    //   localStorage.setItem("zenif_auth_token", res.data.token);
-    window.location.href = res.data.redirect;
-    // }
+    if (res.data.redirect) {
+      localStorage.setItem("zenif_auth_redirect", res.data.redirect);
+      window.location.href = res.data.redirect;
+    }
   } catch (e) {
     console.log(e);
   } finally {

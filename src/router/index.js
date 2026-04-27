@@ -1,5 +1,4 @@
 import {createRouter, createWebHistory} from "vue-router";
-import {isLoggedIn} from "@/services/auth.js";
 
 const routes = [
   {
@@ -40,29 +39,13 @@ const router = createRouter({
   routes,
 });
 
-// Track if user data has been fetched
-let userDataFetched = false;
-let userFetchPromise = null;
-
 router.beforeEach(async (to, from, next) => {
   // Ensure user data is fetched before proceeding with auth checks
 
   if (to.meta.requiresAuth) {
-    if (isLoggedIn()) {
-      if (!to.meta?.permission_slug) {
-        next();
-      } else {
-        next({name: "not-found-programmatically"});
-      }
-    } else {
-      next({name: "Welcome"});
-    }
+    next({name: "Welcome"});
   } else {
-    if (isLoggedIn()) {
-      next({name: "Welcome"});
-    } else {
-      next();
-    }
+    next();
   }
 });
 export default router;

@@ -20,6 +20,7 @@ const submit = async () => {
     return;
   }
   try {
+    layoutState.contentSuccess = "If an account with this email exists, a reset link has been sent.";
     loading.value = true;
     const res = await axios.post("/api/v1/forgot-password", {
       email: form.email,

@@ -3,6 +3,7 @@ import {reactive} from "vue";
 const layoutState = reactive({
   modalError: 0,
   modalSuccess: 0,
+  contentSuccess: null,
   isLoading: false,
   sidebarMini: false,
   sidebarHover: false,
@@ -11,10 +12,6 @@ const layoutState = reactive({
 
   modalDeleteLead: null,
   modalDeleteLeadResult: false,
-
-  mobileSidebar: false,
-  modalWarning: 0,  
-  modalPolicyDocumentId: null, 
 });
 
 export default layoutState;
