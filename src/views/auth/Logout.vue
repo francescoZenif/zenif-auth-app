@@ -3,7 +3,7 @@ onMounted(() => {
   if (localStorage.getItem("zenif_auth_redirect")) {
     localStorage.removeItem("zenif_auth_redirect");
   }
-  router.push({name: "Welcome"});
+  window.location.href = "/";
 });
 </script>
 <template></template>
