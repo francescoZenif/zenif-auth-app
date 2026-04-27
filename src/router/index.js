@@ -32,6 +32,12 @@ const routes = [
     component: () => import("@/views/auth/ResetPassword.vue"),
     meta: {requiresAuth: false},
   },
+  {
+    path: "/logout",
+    name: "Logout",
+    component: () => import("@/views/auth/Logout.vue"),
+    meta: {requiresAuth: false},
+  },
 ];
 
 const router = createRouter({
