@@ -4,7 +4,7 @@ import {onMounted} from "vue";
 
 onMounted(() => {
   localStorage.removeItem("zenif_auth_token");
-  if (localStorage.getItem("zenif_auth_redirect")) {
+  if (localStorage.getItem("zenif_auth_redirect") && window.location.pathname !== "/logout") {
     window.location.href = localStorage.getItem("zenif_auth_redirect");
   }
 });
