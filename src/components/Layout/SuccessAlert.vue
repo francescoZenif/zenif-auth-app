@@ -12,7 +12,7 @@ watch(layoutState, (newState, oldState) => {
 });
 </script>
 <template>
-  <div class="fixed py-2 ps-2 pe-5 top-9 right-0 left-0 mx-auto z-[10] max-w-[600px] bg-white rounded-full shadow-success w-[calc(100%-3rem)]" v-if="layoutState.modalSuccess">
+  <div class="fixed py-2 ps-2 pe-5 top-[100px] right-0 left-0 mx-auto z-[10] max-w-[600px] bg-white rounded-full shadow-success w-[calc(100%-3rem)]" v-if="layoutState.modalSuccess">
     <div class="flex flex-row text-[#53B23A] items-center gap-3 font-semibold items-center">
       <div class="basis-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#d0ffad]">
         <font-awesome-icon icon="fa-regular fa-check" />

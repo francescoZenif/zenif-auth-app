@@ -10,8 +10,6 @@ import AuthVerificationCodeInput from "@/components/auth/AuthVerificationCodeInp
 import AuthWrapForm from "@/components/auth/AuthWrapForm.vue";
 
 const router = useRouter();
-// const email = ref("francesco@gudideas.co.uk");
-// const password = ref("test246");
 const email = ref("");
 const password = ref("");
 const step = ref(1);
@@ -30,7 +28,10 @@ const submitLogin = async () => {
   try {
     await axios.get("/sanctum/csrf-cookie");
 
-    const res = await axios.post("/api/v1/sub/login", {email: email.value, password: password.value});
+    const res = await axios.post("/api/v1/sub/login", {
+      email: email.value,
+      password: password.value,
+    });
 
     if (res?.data?.user) {
       step.value = 3;
@@ -82,6 +83,21 @@ const emptyError = () => {
     errorPassword.value = "Password is required";
   }
 };
+
+document.addEventListener("keydown", function (event) {
+  let stepIn = step.value;
+  if (event.key === "Enter") {
+    if (stepIn == 1) {
+      validEmail();
+    }
+    if (stepIn == 2) {
+      submitLogin();
+    }
+    if (stepIn == 3) {
+      submitCode();
+    }
+  }
+});
 </script>
 <template>
   <AuthWrapForm>
@@ -136,16 +152,18 @@ const emptyError = () => {
 
     <AuthForm @submit="submitCode" v-if="step == 3">
       <AuthLogo />
-      <h3 class="font-bold text-center">TWO-STEP VERIFICATION</h3>
+
+      <span>
+        <h1 class="text-center !text-3xl">Two-Step <span class="text-green-brand">Verification</span>.</h1>
+        <span class="h-[1px] w-[50px] bg-green-brand mx-auto mt-8 mb-4 block"></span>
+      </span>
+
       <p class="text-center !text-white">Enter the code we send to your email address.</p>
       <AuthVerificationCodeInput ref="childRef" />
       <AuthBtn type="submit" version="fill" :disabled="loading">
         <span v-if="loading"> Loading... </span>
         <span v-else> Verify </span>
       </AuthBtn>
-      <div class="text-center">
-        <router-link to="/terms-and-conditions" class="hover:underline">See our T&Cs</router-link>
-      </div>
     </AuthForm>
     <router-link to="/" class="flex justify-center items-center hover:underline gap-2">
       <font-awesome-icon icon="fa-regular fa-arrow-left-long" />

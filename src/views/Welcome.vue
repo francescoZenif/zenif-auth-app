@@ -13,12 +13,13 @@ function goToLogin() {
       <AuthLogo />
       <div>
         <h1 class="text-center !text-3xl">Power Your <span class="text-green-brand">Growth</span>.</h1>
-        <span class="h-[1px] w-[50px] bg-green-brand mx-auto mt-8 mb-4 block"></span>
+        <span class="h-[1px] w-[50px] bg-green-brand mx-auto my-8 block"></span>
+        <p class="text-center mb-4">
+          Your all-in-one platform to manage your business,<br class="hidden lg:inline-block" />
+          track progress, and accelerate your growth.
+        </p>
       </div>
-      <p class="text-center">
-        Your all-in-one platform to manage your business,<br />
-        track progress, and accelerate your growth.
-      </p>
+
       <AuthBtn type="button" version="fill" @click="goToLogin()"> Log In </AuthBtn>
       <div class="text-center">
         <router-link to="/terms-and-conditions" class="hover:underline"> See our T&Cs </router-link>

@@ -11,10 +11,10 @@ const goToLogin = () => {
   <div class="bg-black text-white flex items-center justify-center min-h-screen">
     <div class="w-full m-5 gradient-content py-6 md:py-0">
       <AuthLogo />
-      <h1 class="text-center !text-3xl mb-4">Privacy Policy.</h1>
-      <div>
-        <p class="text-center">By continuing you agree to the <b class="text-green-brand">Terms & Conditions</b> stated below.</p>
+      <div class="max-w-[650px] mx-auto mb-8">
+        <h1 class="text-center !text-3xl mb-4 capitalize">Platform usage & <span class="text-green-brand"> terms</span>.</h1>
         <span class="h-[1px] w-[50px] bg-green-brand mx-auto mt-8 mb-8 block"></span>
+        <p class="text-center">By creating an account, keeping it active, or continuing to use the platform, you acknowledge and agree to the following Terms & Conditions.</p>
       </div>
 
       <div class="flex flex-col gap-5 justify-center text-center">
