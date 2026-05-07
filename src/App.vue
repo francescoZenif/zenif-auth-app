@@ -3,7 +3,6 @@ import {RouterView} from "vue-router";
 import {onMounted} from "vue";
 
 onMounted(() => {
-  localStorage.clear();
   localStorage.removeItem("zenif_auth_token");
   if (localStorage.getItem("zenif_auth_redirect") && window.location.pathname !== "/logout") {
     window.location.href = localStorage.getItem("zenif_auth_redirect");
