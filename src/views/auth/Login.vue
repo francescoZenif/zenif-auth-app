@@ -83,21 +83,6 @@ const emptyError = () => {
     errorPassword.value = "Password is required";
   }
 };
-
-document.addEventListener("keydown", function (event) {
-  let stepIn = step.value;
-  if (event.key === "Enter") {
-    if (stepIn == 1) {
-      validEmail();
-    }
-    if (stepIn == 2) {
-      submitLogin();
-    }
-    if (stepIn == 3) {
-      submitCode();
-    }
-  }
-});
 </script>
 <template>
   <AuthWrapForm>
