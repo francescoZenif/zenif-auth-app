@@ -51,11 +51,12 @@ const emptyError = () => {
   <AuthWrapForm>
     <div class="p-0 flex flex-col gap-5 m-5">
       <AuthLogo />
-      <h1 class="text-center !text-3xl">Reset <span class="text-green-brand">Password</span>.</h1>
-      <span>
+      <div>
+        <h1 class="text-center !text-3xl">Reset <span class="text-green-brand">Password</span>.</h1>
+
+        <span class="h-[1px] w-[50px] bg-green-brand mx-auto my-8 block"></span>
         <p class="text-center">Enter your email address below to reset password.</p>
-        <span class="h-[1px] w-[50px] bg-green-brand mx-auto mt-8 mb-4 block"></span>
-      </span>
+      </div>
 
       <AuthInput v-model="form.email" type="email" placeholder="Your Email" :required="true" />
 
