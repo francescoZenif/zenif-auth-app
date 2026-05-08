@@ -55,7 +55,7 @@ const emptyError = () => {
         <h1 class="text-center !text-3xl">Reset <span class="text-green-brand">Password</span>.</h1>
 
         <span class="h-[1px] w-[50px] bg-green-brand mx-auto my-8 block"></span>
-        <p class="text-center">Enter your email address below to reset password.</p>
+        <p class="text-center mb-4">Enter your email address below to reset password.</p>
       </div>
 
       <AuthInput v-model="form.email" type="email" placeholder="Your Email" :required="true" />
