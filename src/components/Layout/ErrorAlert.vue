@@ -20,7 +20,7 @@ function closeModal() {
 
               <h2 id="modalTitle" class="text-xl capitalize !mb-0 font-semibold sm:text-2xl">Error</h2>
             </div>
-            <button type="button" class="flex items-center justify-center rounded-xl text-gray-400 transition-colors hover:opacity-40 focus:outline-none mt-[-24px] mr-[-16px] w-[44px] h-[44px]" @click="closeModal" aria-label="Close">
+            <button type="button" class="flex items-center justify-center rounded-xl text-gray-400 transition-colors hover:opacity-40 focus:outline-none mt-[-15px] mr-[-16px] w-[44px] h-[44px]" @click="closeModal" aria-label="Close">
               <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" stroke="black" />
               </svg>
