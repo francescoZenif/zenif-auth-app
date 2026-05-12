@@ -58,7 +58,7 @@ const emptyError = () => {
         <p class="text-center mb-4">Enter your email address below to reset password.</p>
       </div>
 
-      <AuthInput v-model="form.email" type="email" placeholder="Your Email" :required="true" />
+      <AuthInput v-model="form.email" type="email" placeholder="Your Email" :required="true" @keydown.enter="submit" />
 
       <div class="text-white bg-[#62301D] px-6 py-2 rounded-full flex gap-3 items-center" v-if="errorEmail">
         <span class="font-bold text-2xl text-[#ea343d]">!</span>
