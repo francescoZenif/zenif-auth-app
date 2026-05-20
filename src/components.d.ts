@@ -19,6 +19,7 @@ declare module 'vue' {
     AuthWrapForm: typeof import('./components/auth/AuthWrapForm.vue')['default']
     BackButton: typeof import('./components/Layout/TopHeader/BackButton.vue')['default']
     ErrorAlert: typeof import('./components/Layout/ErrorAlert.vue')['default']
+    ExternalAuth: typeof import('./views/auth/ExternalAuth.vue')['default']
     ForgotPassword: typeof import('./views/auth/ForgotPassword.vue')['default']
     ListSkeleton: typeof import('./components/Layout/Skeleton/ListSkeleton.vue')['default']
     Login: typeof import('./views/auth/Login.vue')['default']

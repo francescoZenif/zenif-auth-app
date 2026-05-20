@@ -21,6 +21,13 @@ const routes = [
     meta: {requiresAuth: false},
   },
   {
+    path: "/auth/external",
+    name: "External Auth",
+    component: () => import("@/views/auth/ExternalAuth.vue"),
+    meta: {requiresAuth: false},
+  },
+
+  {
     path: "/login",
     name: "Login",
     component: () => import("@/views/auth/Login.vue"),
