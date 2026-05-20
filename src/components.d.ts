@@ -26,6 +26,7 @@ declare module 'vue' {
     LogsActions: typeof import('./components/Layout/TopHeader/LogsActions.vue')['default']
     NavbarSide: typeof import('./components/Layout/Sidebar/NavbarSide.vue')['default']
     Notifications: typeof import('./components/Layout/TopHeader/Notifications.vue')['default']
+    PrivacyPolicy: typeof import('./views/PrivacyPolicy.vue')['default']
     ProfileMenu: typeof import('./components/Layout/TopHeader/ProfileMenu.vue')['default']
     ResetPassword: typeof import('./views/auth/ResetPassword.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

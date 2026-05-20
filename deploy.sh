@@ -4,25 +4,15 @@ cp -r ./temp-assets ./dist/temp-assets
 cat > dist/.htaccess << 'EOF'
 <IfModule mod_rewrite.c>
   RewriteEngine On
- 
+  
+  RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteRule ^(.*)$ https://www. %{HTTP_HOST}/$1 [R=301,L]
- 
-  RewriteCond %{REQUEST_URI} ^(.+)/$
-  RewriteRule ^ %1 [R=301,L]
- 
+  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.html [L]
+  
+  RewriteCond %{REQUEST_URI} ^(.+)/$
+  RewriteRule ^ %1 [R=301,L]
 </IfModule>
- 
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType text/html "access plus 1 hour"
-  ExpiresByType image/gif "access plus 1 month"
-  ExpiresByType image/jpeg "access plus 1 month"
-  ExpiresByType image/png "access plus 1 month"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
