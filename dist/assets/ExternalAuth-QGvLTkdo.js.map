@@ -1,1 +1,0 @@
-{"version":3,"file":"ExternalAuth-QGvLTkdo.js","sources":["../../src/views/auth/ExternalAuth.vue"],"sourcesContent":["<script setup></script>\n\n<template>\n  <div>External Auth</div>\n</template>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"iFAGE,OAAAA,EAAA,EAAAC,EAAwB,WAAnB,eAAa"}

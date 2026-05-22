@@ -24,6 +24,9 @@ function goToLogin() {
       <div class="text-center">
         <router-link to="/terms-and-conditions" class="hover:underline"> See our T&Cs </router-link>
       </div>
+      <div class="text-center">
+        <router-link to="/privacy-policy" class="hover:underline"> See our Privacy Policy </router-link>
+      </div>
     </AuthForm>
   </AuthWrapForm>
 </template>
