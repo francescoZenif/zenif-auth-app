@@ -1,4 +1,6 @@
 import {createApp} from "vue";
+import {ViteSSG} from "vite-ssg";
+
 import App from "./App.vue";
 import router from "./router";
 
@@ -15,7 +17,7 @@ import "./assets/scss/main.scss";
 
 library.add(fas, far, fal, fab);
 
-const app = createApp(App);
+const app = ViteSSG(App);
 
 app.component("font-awesome-icon", FontAwesomeIcon);
 
