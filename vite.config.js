@@ -45,6 +45,7 @@ export default defineConfig(({mode}) => {
     ],
     server: {
       host: true, // or true for all
+      port: 5175,
     },
     resolve: {
       alias: {

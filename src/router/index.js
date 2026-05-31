@@ -40,6 +40,12 @@ const routes = [
     meta: {requiresAuth: false},
   },
   {
+    path: "/set-password/:token",
+    name: "Set Password",
+    component: () => import("@/views/auth/SetPassword.vue"),
+    meta: {requiresAuth: false},
+  },
+  {
     path: "/logout",
     name: "Logout",
     component: () => import("@/views/auth/Logout.vue"),
